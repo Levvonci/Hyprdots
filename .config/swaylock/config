@@ -1,0 +1,27 @@
+daemonize
+show-failed-attempts
+clock
+effect-blur=10x7
+indicator
+indicator-radius=80
+indicator-thickness=5
+line-color=313244
+inside-color=0011111b
+key-hl-color=f5c2e7
+separator-color=00000000
+text-color=f5c2e7
+ring-ver-color=11111b
+ring-wrong-color=11111b
+inside-wrong-color=f38ba8
+inside-clear-color=a6e3a1
+ring-clear-color=11111b
+inside-ver-color=89b4fa
+effect-vignette=0.2:0.2
+ring-color=11111b
+grace=2
+grace-no-mouse
+grace-no-touch
+datestr=%A %d %B
+fade-in="0.1"
+ignore-empty-password
+screenshots
