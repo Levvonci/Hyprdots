@@ -4,5 +4,5 @@
 ![nvim](https://github.com/Levvonci/Hyprdots/blob/main/.assets/1.png)
 
 ## Nvim
-**I'm currently using a personal config** </config/nvim>
+**I'm currently using a personal config** `/config/nvim`
 
