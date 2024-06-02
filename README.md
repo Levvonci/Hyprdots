@@ -14,11 +14,17 @@ Is based on the Catppuccin Mocha Color Palette bc i love it <3.**
 ![Kitty]()
 
 ```Thunar: File Manager```
+
 ```Swaylock```
+
 ```rofi: App Launcher```
+
 ```Firefox: Browser```
+
 ```Webcord: Discord client for wayland```
+
 ```Spicetify: Spotify Custom client```
+
 ```Neovim: Fav IDE```
 
 
