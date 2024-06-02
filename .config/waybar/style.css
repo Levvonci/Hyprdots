@@ -1,7 +1,7 @@
 @import "mocha.css";
 
 * {
-  font-family: FantasqueSansMono Nerd Font;
+  font-family: ProFontIIx Nerd Font;
   font-size: 17px;
   min-height: 0;
 }
@@ -14,9 +14,9 @@
 
 #workspaces {
   border-radius: 1rem;
-  margin: 5px;
+  margin: 5px 5px 5px 5px;
   background-color: @surface0;
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 
 #workspaces button {
@@ -35,6 +35,11 @@
   border-radius: 1rem;
 }
 
+#custom-media,
+#cava,
+#memory,
+#cpu,
+#custom-arch,
 #custom-music,
 #tray,
 #backlight,
@@ -46,6 +51,42 @@
   background-color: @surface0;
   padding: 0.5rem 1rem;
   margin: 5px 0;
+}
+
+#custom-media{
+  color: @flamingo;
+  margin: 5px 5px 5px 150px;
+  border-radius: 1rem;
+}
+
+#cava {
+    margin: 5px 15px 5px 5px; 
+    color: @teal;
+    border-radius: 1rem;
+}
+
+
+#memory{
+    margin: 5px 5px 5px 10px;
+    border-radius: 1rem;
+    color: @mauve;
+}
+
+#cpu{
+    margin: 5px 0px 5px 50px;
+    border-radius: 1rem;
+    padding-right: 10px;
+    padding-left: 15px;
+    color: @peach;
+}
+
+#custom-arch{
+    margin: 5px 5px 5px 5px;
+    border-radius: 1rem;
+    font-size: 25px;
+    padding-right: 18px;
+    padding-left: 15px;
+    color: @sapphire; 
 }
 
 #clock {
@@ -77,11 +118,12 @@
 #pulseaudio {
   color: @maroon;
   border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 
 #custom-music {
-  color: @mauve;
+  color: @flamingo;
+  margin: 5px 5px 5px 5px;
   border-radius: 1rem;
 }
 

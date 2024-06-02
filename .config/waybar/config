@@ -3,9 +3,11 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["custom/music"],
-    "modules-right": ["pulseaudio", "clock", "tray", "custom/lock", "custom/power"],
+    
+    "modules-left": ["custom/arch", "cpu", "memory", "custom/media"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["cava", "pulseaudio", "clock", "tray", "custom/lock", "custom/power"],
+    
     "hyprland/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
@@ -14,11 +16,59 @@
              "default": "",
          },
      },
+
+        "cava": {
+        "framerate": 60,
+        "autosens": 1,
+        "sensitivity": 2,
+        "bars": 20,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+            "on-click-right": "mode",
+        "gravity": 200
+
+        }
+    },
+
+
+    "custom/media": {
+
+"exec": "$HOME/.config/waybar/mediaplayer.py --player spotify",
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "playerctl --player spotify play-pause",
+    },
+
+     "memory":{
+        "format":"{}%  ",
+    },
+
+     "cpu":{
+        "format": "{usage}%  ",
+        "tooltip": false
+    },
+        
+    "custom/arch":{
+        "format": "󰣇",
+    },
+
     "tray": {
         "icon-size": 21,
         "spacing": 10
     },
-    "custom/music": {
+
+"custom/music": {
         "format": "  {}",
         "escape": true,
         "interval": 5,
@@ -27,12 +77,14 @@
         "on-click": "playerctl play-pause",
         "max-length": 50
     },
+
     "clock": {
         "timezone": "Europe/Rome",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": " {:%d/%m/%Y}",
         "format": " {:%H:%M}"
     },
+    
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
@@ -42,11 +94,13 @@
         },
         "on-click": "pavucontrol"
     },
+    
     "custom/lock": {
         "tooltip": false,
         "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
         "format": "",
     },
+    
     "custom/power": {
         "tooltip": false,
         "on-click": "wlogout &",
