@@ -8,9 +8,11 @@ Is based on the Catppuccin Mocha Color Palette bc i love it <3.**
 
 ### Dependencies
 ```waybar-cava: status bar```
+
 ![Waybar](https://github.com/Levvonci/Hyprdots/blob/main/.assets/swappy-20240602_155231.png)
 
 ```kitty: terminal emulator```
+
 ![Kitty](https://github.com/Levvonci/Hyprdots/blob/main/.assets/swappy-20240602_160614.png)
 
 ```Thunar: File Manager```
