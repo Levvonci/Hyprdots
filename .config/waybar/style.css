@@ -35,6 +35,7 @@
   border-radius: 1rem;
 }
 
+/*#network,*/
 #custom-media,
 #cava,
 #memory,
@@ -52,10 +53,15 @@
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
-
+/*
+#network{
+    margin: 5px 5px 5px 5px;
+    border-radius: 1rem;
+}
+*/
 #custom-media{
   color: @flamingo;
-  margin: 5px 5px 5px 150px;
+  margin: 5px 5px 5px 5px;
   border-radius: 1rem;
 }
 
@@ -67,13 +73,13 @@
 
 
 #memory{
-    margin: 5px 5px 5px 10px;
+    margin: 5px 5px 5px 5px;
     border-radius: 1rem;
     color: @mauve;
 }
 
 #cpu{
-    margin: 5px 0px 5px 50px;
+    margin: 5px 5px 5px 5px;
     border-radius: 1rem;
     padding-right: 10px;
     padding-left: 15px;
